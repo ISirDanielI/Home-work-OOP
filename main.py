@@ -150,8 +150,12 @@ for check in student_list:
                             enter = "%.1f" % (gr_cour / gr)
                             print(f'Средний оценка Студентов за курс {check_cor} равняется {enter}.')
                             break
+            elif operation == len(student_list):
+                enter = "%.1f" % (gr_cour / gr)
+                print(f'Средний оценка Студентов за курс {check_cor} равняется {enter}.')
+                break
 
-lecturer_list = [bob.__dict__,maria.__dict__]
+lecturer_list = [maria.__dict__,bob.__dict__]
 check_cor_two = input('Введите название курса:')
 gr = 0
 operation = 0
@@ -170,3 +174,8 @@ for check in lecturer_list:
                                 enter = "%.1f" % (gr_cour / gr)
                                 print(f'Средний оценка Лекторов за курс {check_cor} равняется {enter}.')
                                 break
+            elif operation == len(lecturer_list):
+                enter = "%.1f" % (gr_cour / gr)
+                print(f'Средний оценка Лекторов за курс {check_cor} равняется {enter}.')
+                break
+
